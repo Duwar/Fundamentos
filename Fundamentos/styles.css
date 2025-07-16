@@ -1,0 +1,46 @@
+/* Esto es un comentario CRTL + } */
+
+/* ASCII para {}
+ALT + 123 (Teclado en Español) 
+ */
+/* body{background-color: darkred;} */
+
+/* reglas de estilo */
+/* 
+- La etiquera como p o h1, son un selector 
+- Dentro de las llaves contienen la propiedad es el "color" o "background", entre otros.
+- Finlamente tenemos el valor dato a la propiedad, que refiere a el color elegido en el caso de la propiedad
+
+ __p_____    {__color__: ________Black_______}
+selector   propiedad    dato de la propiedad
+
+Selectores:
+    1. Etiquetas -> Menos especifico
+    2. Clases -> especificacion media .clase
+    3. identificador unico -> especificidad mas alta -> #id
+*/
+
+ body {
+background-color: gray;
+color: black;
+text-align: right;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+.p1 {
+    color: white;
+    font-weight: bolder;
+}
+.parrafoLargo {
+    background-color: white;
+    text-align: left;
+    padding: 0 0 0 150px;
+}
+
+#titulo {
+    font-size: 50px;
+}
+
