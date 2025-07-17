@@ -1,0 +1,98 @@
+/* CSS CON BUENAS PRÁCTICAS */
+
+/* Establecer condiciones iniciales */
+/* 1. Impotaciones de tipografia */
+/* 2. Definir las variables que va a utilizar paleta de colores
+*/
+
+@import url('https://fonts.cdnfonts.com/css/dark-monday-black');
+@import url('https://fonts.cdnfonts.com/css/kg-compassion');
+@import url('https://fonts.cdnfonts.com/css/kuasar');
+
+:root {
+    --color-fondo: #FB8B24;
+    --color-texto: #0F4C5C;
+    --color-enfasis: #ffffff;
+    --tamaño-letra: 25px;
+    --tamaño-titulo: 60px;
+    --tamaño-titulo2: 40px;
+    --tamaño-titulo3: 30px;
+    --fuente-texto: 'Kuasar', sans-serif;
+    --fuente-titulo: 'Dark monday black', sans-serif;
+    --fuente-titulo2: 'KG Compassion', sans-serif;
+}
+
+*{
+    margin: 0;
+    
+}
+
+body {
+    font-family: var(--fuente-texto);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-size: var(--tamaño-letra);
+    /* quitar scroll horizontal */
+    overflow-x: hidden;
+}
+span {
+    color: var(--color-enfasis);
+}
+
+/* --------------- Header -------------------- */
+header {
+    /* ancho */
+    width: 100vw;    /*"vw"= viewport width = ancho de pantalla */
+    /* altura */
+    height: 15vh;    /*"vh" viewport height = alto de pantalla */
+    background-color: var(--color-enfasis);
+
+}
+
+nav{
+    /* Como se muestran los elementos */
+    display: flex;
+    /* alinear elementos dentro de un contenedor */
+    flex-direction: row;
+    /* alinear en el eje x */
+    justify-content: space-around;
+    /* alinear en el eje y */
+    align-items: center;
+    gap: 20px;
+}
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo{
+    width: 8rem;
+    height: auto;
+    padding: 8px;
+}
+
+/* ---------------- Main --------------------- */
+
+h1 {
+    font-family: var(--fuente-titulo);
+    font-size: var(--tamaño-titulo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: var(--fuente-titulo2);
+    font-size: var(--tamaño-titulo2);
+}
+
+h3 {
+    font-family: var(--fuente-titulo2);
+    font-size: var(--tamaño-titulo3);
+}
+
+/* --------------- Footer -------------------- */
